@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Encuestas en tiempo real</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Encuestas en tiempo real</h1>
+
+    <section class="create">
+      <h2>Crear encuesta</h2>
+      <label>Pregunta</label>
+      <input id="question" placeholder="Escribe la pregunta" />
+      <label>Opciones (una por línea)</label>
+      <textarea id="options" placeholder="Una opción por línea"></textarea>
+      <button id="createBtn">Crear encuesta</button>
+    </section>
+
+    <section class="polls">
+      <h2>Encuestas</h2>
+      <div id="pollList">Cargando encuestas...</div>
+    </section>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
+</body>
+</html>
